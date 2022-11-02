@@ -1,10 +1,4 @@
 * {
-    --txt-color: white;
-    --primary-color: #92153b;
-    --secondary-color: #630e45;
-    --dark-color: #43024b;
-    --ultra-dark-color: #210038;
-
     color: var(--txt-color) !important;
 }
 
@@ -17,8 +11,9 @@ nav, .dropdown-menu
     background-color: var(--secondary-color) !important;
 }
 
-.navbar-toggler {
-    color: var(--txt-color) !important;
+
+.navbar-toggler-icon {
+    filter: invert();
 }
 
 .dropdown-item:hover {

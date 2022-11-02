@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wJJk/iSh0sziI1K7qwzDWpTxBpr3S/nq3l6yt8VjU28=",
+  "Hash": "NwVnviscpjDU4qoZTflwG//ImogITsJi1J7fP5LsHTc=",
   "Source": "Blazoteca",
   "BasePath": "_content/Blazoteca",
   "Mode": "Default",
@@ -372,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\tenutamassellina.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\wwwroot\\img\\wine-bottle.png",
+      "SourceId": "Blazoteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\wwwroot\\",
+      "BasePath": "_content/Blazoteca",
+      "RelativePath": "img/wine-bottle.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\wine-bottle.png"
     }
   ]
 }

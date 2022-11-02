@@ -9,12 +9,6 @@
     --primary-dark: rgb(36, 39, 70);
     --neutral: rgb(28, 28, 49);
     --card-bg: rgb(39, 40, 58);
-
-    --txt-color: white;
-    --primary-color: #92153b;
-    --secondary-color: #630e45;
-    --dark-color: #43024b;
-    --ultra-dark-color: #210038;
 }
 
 .container[b-76icu2de6q] {
@@ -56,10 +50,12 @@
 }
 
 .card:hover[b-76icu2de6q] {
-    width: 253px;
-    height: 396px;
-    transition: height .1s ease-in, width .1s ease-in;
+    animation: 0.85s slow-highlighting-b-76icu2de6q forwards;
+    cursor: pointer;
+}
 
+@keyframes slow-highlighting-b-76icu2de6q {
+    to { background-color: #210038;}
 }
 
 .cardimg[b-76icu2de6q] {
@@ -76,7 +72,7 @@
 
 .name[b-76icu2de6q] {
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
     line-height: 1em;
@@ -88,17 +84,14 @@
     color: rgb(123, 106, 202);
 }
 
-.region[b-76icu2de6q]{
+.region[b-76icu2de6q] {
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1em;
     line-height: 1em;
-    margin: 13%;
-    margin-top: 4%;
-    margin-bottom: 0;
+    margin: 13% 4%;
     overflow-wrap: normal;
-    color: rgb(118, 129, 153);
+    color: var(--txt-color);
 }
 
 .inforow[b-76icu2de6q] {
@@ -112,7 +105,6 @@
 
 .price[b-76icu2de6q] {
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
     font-size: 1em;
     color: rgb(123, 106, 202);
@@ -120,19 +112,12 @@
 
 .year[b-76icu2de6q] {
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
     font-size: 1em;
     color: rgb(185, 190, 201);
 }
 /* _content/Blazoteca/Shared/CustomNavMenu.razor.rz.scp.css */
 *[b-9chp4s6w9u] {
-    --txt-color: white;
-    --primary-color: #92153b;
-    --secondary-color: #630e45;
-    --dark-color: #43024b;
-    --ultra-dark-color: #210038;
-
     color: var(--txt-color) !important;
 }
 
@@ -145,8 +130,9 @@ nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
     background-color: var(--secondary-color) !important;
 }
 
-.navbar-toggler[b-9chp4s6w9u] {
-    color: var(--txt-color) !important;
+
+.navbar-toggler-icon[b-9chp4s6w9u] {
+    filter: invert();
 }
 
 .dropdown-item:hover[b-9chp4s6w9u] {
@@ -180,24 +166,44 @@ button:hover[b-9chp4s6w9u]
 .badge[b-9chp4s6w9u] {
     background-color: var(--ultra-dark-color) !important;
 }
-/* _content/Blazoteca/Shared/Hero.razor.rz.scp.css */
-.carousel-inner[b-6qm5377twb] {
-    max-height: 75vh;
+/* _content/Blazoteca/Shared/Footer.razor.rz.scp.css */
+footer[b-a126z7ivyv] {
+    --credits-color: gainsboro;
 
+    background-color: var(--dark-color);
+}
+
+a[b-a126z7ivyv], p[b-a126z7ivyv], span[b-a126z7ivyv] {
+    text-decoration: none;
+    color: gainsboro;
+}
+/* _content/Blazoteca/Shared/Hero.razor.rz.scp.css */
+.wrapper[b-6qm5377twb] {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.carousel-inner[b-6qm5377twb] {
+    max-height: 75vh;
+}
+
 .heading[b-6qm5377twb] {
     position: absolute;
     text-align: center;
-    color: white;
+    color: var(--txt-color);
     z-index: 10;
 }
 
+.heading > h1[b-6qm5377twb] {
+    font-size: 4rem;
+}
+
+.heading > h4[b-6qm5377twb] {
+    font-size: 1.5rem;
+}
+
 .carousel-item[b-6qm5377twb] {
-    margin-left: -100vw;
     max-height: inherit;
 }
 

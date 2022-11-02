@@ -1,20 +1,29 @@
-.carousel-inner[b-6qm5377twb] {
-    max-height: 75vh;
-
+.wrapper[b-6qm5377twb] {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.carousel-inner[b-6qm5377twb] {
+    max-height: 75vh;
+}
+
 .heading[b-6qm5377twb] {
     position: absolute;
     text-align: center;
-    color: white;
+    color: var(--txt-color);
     z-index: 10;
 }
 
+.heading > h1[b-6qm5377twb] {
+    font-size: 4rem;
+}
+
+.heading > h4[b-6qm5377twb] {
+    font-size: 1.5rem;
+}
+
 .carousel-item[b-6qm5377twb] {
-    margin-left: -100vw;
     max-height: inherit;
 }
 

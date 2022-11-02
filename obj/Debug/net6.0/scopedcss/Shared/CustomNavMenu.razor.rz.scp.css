@@ -1,10 +1,4 @@
 *[b-9chp4s6w9u] {
-    --txt-color: white;
-    --primary-color: #92153b;
-    --secondary-color: #630e45;
-    --dark-color: #43024b;
-    --ultra-dark-color: #210038;
-
     color: var(--txt-color) !important;
 }
 
@@ -17,8 +11,9 @@ nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
     background-color: var(--secondary-color) !important;
 }
 
-.navbar-toggler[b-9chp4s6w9u] {
-    color: var(--txt-color) !important;
+
+.navbar-toggler-icon[b-9chp4s6w9u] {
+    filter: invert();
 }
 
 .dropdown-item:hover[b-9chp4s6w9u] {
