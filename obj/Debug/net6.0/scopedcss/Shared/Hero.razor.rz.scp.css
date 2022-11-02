@@ -1,8 +1,20 @@
 .carousel-inner[b-6qm5377twb] {
     max-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading[b-6qm5377twb] {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 10;
 }
 
 .carousel-item[b-6qm5377twb] {
+    margin-left: -100vw;
     max-height: inherit;
 }
 

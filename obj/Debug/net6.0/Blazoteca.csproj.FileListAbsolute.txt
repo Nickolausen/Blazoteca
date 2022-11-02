@@ -28,3 +28,5 @@ C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net
 C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net6.0\scopedcss\Shared\CustomNavMenu.razor.rz.scp.css
 C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net6.0\scopedcss\Shared\Hero.razor.rz.scp.css
 C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net6.0\scopedcss\Shared\Card.razor.rz.scp.css
+C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Shop.razor.rz.scp.css
+C:\Users\nicho\Desktop\Scuola\5F\Informatica\Laboratorio\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css

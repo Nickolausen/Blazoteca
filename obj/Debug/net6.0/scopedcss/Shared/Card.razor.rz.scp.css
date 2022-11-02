@@ -1,22 +1,13 @@
-:root[b-76icu2de6q] {
+.card[b-76icu2de6q] {
     --primary-dark: rgb(36, 39, 70);
     --neutral: rgb(28, 28, 49);
     --card-bg: rgb(39, 40, 58);
-}
 
-*[b-76icu2de6q] {
-    margin:0;
-    padding:0;
-}
-
-body[b-76icu2de6q] {
-    box-sizing: border-box;
-    background-color: var(--primary-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    --txt-color: white;
+    --primary-color: #92153b;
+    --secondary-color: #630e45;
+    --dark-color: #43024b;
+    --ultra-dark-color: #210038;
 }
 
 .container[b-76icu2de6q] {
@@ -50,7 +41,7 @@ body[b-76icu2de6q] {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
-    background-color: var(--card-bg);
+    background-color: var(--secondary-color);
     width: 230px;
     height: 360px;
     box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.568);
