@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NwVnviscpjDU4qoZTflwG//ImogITsJi1J7fP5LsHTc=",
+  "Hash": "rwQ3mwOhZfVqpn24LLYMWFcRg0GLqdTZzsNyyobGTBg=",
   "Source": "Blazoteca",
   "BasePath": "_content/Blazoteca",
   "Mode": "Default",
@@ -355,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\sangiovese.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\wwwroot\\img\\site-icon.png",
+      "SourceId": "Blazoteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\wwwroot\\",
+      "BasePath": "_content/Blazoteca",
+      "RelativePath": "img/site-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\site-icon.png"
     },
     {
       "Identity": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\wwwroot\\img\\tenutamassellina.jpeg",
