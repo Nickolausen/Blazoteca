@@ -10,10 +10,10 @@
 
 ---
 ### Come caricare il Bootstrap Bundle
-1. **Primo step**: ottieni il bundle
+1. **Primo step**: ottieni il bundle.
 Copia tutto il file minificato e incollalo in un file chiamato `bootstrap.bundle.min` situato nel primo livello della cartella `wwwroot`.
 
-2. **Secondo step**: collega il file al progetto
+2. **Secondo step**: collega il file al progetto.
 Cerca `_Layout.cshtml` nella cartella `Pages` e includi il file come se fosse un normale script JS.
 
 ---
