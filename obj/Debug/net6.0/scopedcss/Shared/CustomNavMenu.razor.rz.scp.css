@@ -1,0 +1,54 @@
+*[b-9chp4s6w9u] {
+    --txt-color: white;
+    --primary-color: #92153b;
+    --secondary-color: #630e45;
+    --dark-color: #43024b;
+    --ultra-dark-color: #210038;
+
+    color: var(--txt-color) !important;
+}
+
+@media (min-width: 992px) {
+    ul.navbar-nav[b-9chp4s6w9u] { gap: 2em; }
+}
+
+nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
+{
+    background-color: var(--secondary-color) !important;
+}
+
+.navbar-toggler[b-9chp4s6w9u] {
+    color: var(--txt-color) !important;
+}
+
+.dropdown-item:hover[b-9chp4s6w9u] {
+    border-radius: .25em;
+    background-color: var(--dark-color)
+}
+
+.nav-item:hover[b-9chp4s6w9u],
+.dropdown-item:hover[b-9chp4s6w9u]
+{
+    animation: 0.75s slow-highlighting-b-9chp4s6w9u forwards;
+}
+
+@keyframes slow-highlighting-b-9chp4s6w9u  {
+    to {
+        border-radius: .25em;
+        background-color: var(--dark-color)
+    }
+}
+
+button[b-9chp4s6w9u]
+{
+    background-color: var(--dark-color);
+}
+
+button:hover[b-9chp4s6w9u]
+{
+    background-color: var(--ultra-dark-color);
+}
+
+.badge[b-9chp4s6w9u] {
+    background-color: var(--ultra-dark-color) !important;
+}

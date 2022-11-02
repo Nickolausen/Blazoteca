@@ -1,0 +1,11 @@
+.carousel-inner {
+    max-height: 75vh;
+}
+
+.carousel-item {
+    max-height: inherit;
+}
+
+img {
+    filter: brightness(40%);
+}

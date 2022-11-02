@@ -1,0 +1,11 @@
+.carousel-inner[b-6qm5377twb] {
+    max-height: 75vh;
+}
+
+.carousel-item[b-6qm5377twb] {
+    max-height: inherit;
+}
+
+img[b-6qm5377twb] {
+    filter: brightness(40%);
+}
