@@ -4,18 +4,16 @@
 ## Documentazione
 ---
 ### Come modificare il layout di default del template Blazor
-1. Primo step
-Crea, all'interno della cartella Shared, un file `.razor` che contiene il layout custom. **DEVE obbligatoriamente contenere la direttiva `@inherits LayoutComponentBase` e, di conseguenza, implementare da qualche parte `@Body` (il corpo del sito)**.
+1. **Primo step**: crea, all'interno della cartella Shared, un file `.razor` che contiene il layout custom. **DEVE obbligatoriamente contenere la direttiva `@inherits LayoutComponentBase` e, di conseguenza, implementare da qualche parte `@Body` (il corpo del sito)**.
 
-2. Secondo step
-Entra all'interno di `App.razor` e rimpiazza tutte le occorrenze di "MainLayout" con il nome del file del custom layout.
+2. **Secondo step**: entra all'interno di `App.razor` e rimpiazza tutte le occorrenze di "MainLayout" con il nome del file del custom layout.
 
 ---
 ### Come caricare il Bootstrap Bundle
-1. Primo step: ottieni il bundle
+1. **Primo step**: ottieni il bundle
 Copia tutto il file minificato e incollalo in un file chiamato `bootstrap.bundle.min` situato nel primo livello della cartella `wwwroot`.
 
-2. Secondo step: collega il file al progetto
+2. **Secondo step**: collega il file al progetto
 Cerca `_Layout.cshtml` nella cartella `Pages` e includi il file come se fosse un normale script JS.
 
 ---
