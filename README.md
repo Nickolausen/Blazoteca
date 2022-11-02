@@ -14,5 +14,5 @@ Entra all'interno di `App.razor` e rimpiazza tutte le occorrenze di "MainLayout"
 ### Primo step: ottieni il bundle
 Copia tutto il file minificato e incollalo in un file chiamato `bootstrap.bundle.min` situato nel primo livello della cartella `wwwroot`.
 
-## Secondo step: collega il file al progetto
+### Secondo step: collega il file al progetto
 Cerca `_Layout.cshtml` nella cartella `Pages` e includi il file come se fosse un normale script JS.
