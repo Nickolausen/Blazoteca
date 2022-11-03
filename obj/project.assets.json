@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\Blazoteca.csproj",
+      "projectUniqueName": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\Blazoteca.csproj",
       "projectName": "Blazoteca",
-      "projectPath": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\Blazoteca.csproj",
+      "projectPath": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\Blazoteca.csproj",
       "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicho\\Desktop\\Scuola\\5F\\Informatica\\Laboratorio\\Blazoteca\\obj\\",
+      "outputPath": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicho\\AppData\\Roaming\\NuGet\\NuGet.Config",

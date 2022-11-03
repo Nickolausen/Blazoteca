@@ -6,7 +6,17 @@
     <NotFound>
         <PageTitle>Not found</PageTitle>
         <LayoutView Layout="@typeof(CustomMainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <div class="wrapper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                <p role="alert" class="fs-1 fw-bolder">404 Not Found!</p>
+                <img id="imgNotFound" src="img/notfound.png" alt="404 Not Found">
+            </div>
         </LayoutView>
     </NotFound>
 </Router>
+
+
+<style>
+    #imgNotFound {
+        width: 10%;
+    }
+</style>

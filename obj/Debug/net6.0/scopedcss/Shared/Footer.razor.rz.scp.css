@@ -1,6 +1,7 @@
 footer[b-a126z7ivyv] {
     --credits-color: gainsboro;
 
+    flex-shrink: 0;
     background-color: var(--dark-color);
 }
 

@@ -2,6 +2,8 @@
     color: var(--txt-color) !important;
 }
 
+nav[b-9chp4s6w9u] { flex-shrink: 0; }
+
 @media (min-width: 992px) {
     ul.navbar-nav[b-9chp4s6w9u] { gap: 2em; }
 }
@@ -21,8 +23,8 @@ nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
     background-color: var(--dark-color)
 }
 
-.nav-item:hover[b-9chp4s6w9u],
-.dropdown-item:hover[b-9chp4s6w9u]
+.dropdown-item:hover[b-9chp4s6w9u],
+.navbar-nav > .nav-item:hover[b-9chp4s6w9u]
 {
     animation: 0.75s slow-highlighting-b-9chp4s6w9u forwards;
 }

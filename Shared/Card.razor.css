@@ -1,111 +1,80 @@
 .card {
-    --primary-dark: rgb(36, 39, 70);
-    --neutral: rgb(28, 28, 49);
-    --card-bg: rgb(39, 40, 58);
-}
-
-.container {
-    background-color: var(--neutral);
-    width: 90%;
-    height: 90%;
-    overflow: hidden;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.568);
-}
-
-
-.catalog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: var(--secondary-color);
     width: 230px;
     height: 360px;
     box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.568);
-    margin:2%;
+    margin: 2%;
 }
 
-.card:hover {
+.card:hover { cursor: pointer; }
+
+.badge {
+    top: 2.5%;
+    right: 5%; 
+    position: absolute;
+
+    background-color: var(--dark-color);
+    z-index: 10; 
+}
+
+.info-container {
+    background-color: var(--secondary-color);
+}
+
+.info-container:hover {
     animation: 0.85s slow-highlighting forwards;
     cursor: pointer;
 }
 
-@keyframes slow-highlighting {
-    to { background-color: #210038;}
-}
-
-.cardimg {
-    width: 100%;
-}
-
-.cardinfo {
-    height: 90%;
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-
-.name {
-    text-align: center;
+.title {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-    line-height: 1em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
     overflow-wrap: normal;
     color: rgb(185, 190, 201);
 }
 
-.name:hover {
+.title:hover {
     color: rgb(123, 106, 202);
 }
 
+.made-in {
+    margin-bottom: -.5%;
+    font-size: x-small;
+}
+
 .region {
-    text-align: center;
-    font-weight: 400;
     font-size: 1em;
     line-height: 1em;
-    margin: 13% 4%;
     overflow-wrap: normal;
     color: var(--txt-color);
 }
 
-.inforow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 12%;
-    margin-top: 0;
-}
-
 .price {
-    text-align: center;
     font-weight: 700;
     font-size: 1em;
     color: rgb(123, 106, 202);
 }
 
-.year {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1em;
-    color: rgb(185, 190, 201);
+.old-price {
+    color: rgb(125, 117, 158);
+}
+
+button
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+@keyframes slow-highlighting {
+    to { background-color: var(--ultra-dark-color);}
 }
