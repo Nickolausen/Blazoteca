@@ -7,6 +7,7 @@
     height: 360px;
     box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.568);
     margin: 2%;
+    border: 0;
 }
 
 .card:hover[b-76icu2de6q] { cursor: pointer; }
