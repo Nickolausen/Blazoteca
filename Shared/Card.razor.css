@@ -1,16 +1,18 @@
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 230px;
-    height: 360px;
-    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.568);
+    --card-width: 275px;
+    --card-height: 360px;
+
+    width: var(--card-width);
+    height: var(--card-height);
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
     margin: 2%;
     border: 0;
 }
 
-.card:hover { cursor: pointer; }
+.card:hover 
+{ 
+    cursor: pointer;
+}
 
 .badge {
     top: 2.5%;
@@ -39,7 +41,7 @@
 }
 
 .title:hover {
-    color: rgb(123, 106, 202);
+    color: rgb(176, 158, 255);
 }
 
 .made-in {
@@ -57,11 +59,11 @@
 .price {
     font-weight: 700;
     font-size: 1em;
-    color: rgb(123, 106, 202);
+    color: rgb(179, 170, 218);
 }
 
 .old-price {
-    color: rgb(125, 117, 158);
+    color: rgb(146, 132, 202);
 }
 
 button

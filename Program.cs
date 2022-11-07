@@ -27,4 +27,6 @@ app.UseRouting();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
+
+Enoteca.FillDataSet();
 app.Run();
