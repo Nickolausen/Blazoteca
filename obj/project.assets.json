@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nicho\\.nuget\\packages\\": {}
+    "C:\\Users\\lucac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\Blazoteca.csproj",
+      "projectUniqueName": "C:\\Users\\lucac\\Documents\\Sorgenti\\Blazoteca\\Blazoteca.csproj",
       "projectName": "Blazoteca",
-      "projectPath": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\Blazoteca.csproj",
-      "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\obj\\",
+      "projectPath": "C:\\Users\\lucac\\Documents\\Sorgenti\\Blazoteca\\Blazoteca.csproj",
+      "packagesPath": "C:\\Users\\lucac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucac\\Documents\\Sorgenti\\Blazoteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nicho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

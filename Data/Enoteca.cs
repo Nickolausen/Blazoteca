@@ -1,22 +1,15 @@
 ﻿using System.Xml.Serialization;
 namespace Blazoteca.Data
 {
-    public static class Enoteca
+    public class Enoteca
     {
-        private static string DataSetPath = @"Data\DB\Bottiglie.xml";
-        private static List<Bottiglia> DataSetBottiglie = new List<Bottiglia>();
-
-        public static void FillDataSet()
+        public List<Bottiglia> DataSetBottiglie { get; set; }
+        public Enoteca()
         {
-            if (!File.Exists(DataSetPath)) return;
-
-            using (StreamReader sr = new StreamReader(DataSetPath))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Bottiglia>));
-                DataSetBottiglie = serializer.Deserialize(sr) as List<Bottiglia>;
-            }
+            DataSetBottiglie = new List<Bottiglia>();
+            DBHandler.FillDataSet(@"Data\DB\Bottiglie.xml", this);
         }
-        public static List<Bottiglia> GetListaVini()
+        public List<Bottiglia> GetListaVini()
         {
             return DataSetBottiglie;
         }

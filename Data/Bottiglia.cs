@@ -1,7 +1,6 @@
 ﻿using System.Xml.Serialization;
 namespace Blazoteca.Data
 {
-    [Serializable]
     public class Bottiglia
     {
         [XmlIgnore]
