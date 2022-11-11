@@ -1,4 +1,50 @@
+/* _content/Blazoteca/Pages/Carrello.razor.rz.scp.css */
+button[b-jyc1m5lllj]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-jyc1m5lllj]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
 /* _content/Blazoteca/Pages/Index.razor.rz.scp.css */
+/* _content/Blazoteca/Pages/Recensioni.razor.rz.scp.css */
+/* .title-wrapper {
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+
+    --hero-height: 75vh;
+    /* height: var(--hero-height); */
+    /* margin-bottom: calc(100vh - var(--hero-height)); */
+
+.title-wrapper :not(img)[b-ysffkezke9] {
+    z-index: 10;
+    color: var(--txt-color);
+}
+
+.title-wrapper > img[b-ysffkezke9] {
+    filter: brightness(40%);
+}
+
+button[b-ysffkezke9]
+{
+    color: var(--txt-color);
+    outline: 0;
+    background-color: var(--dark-color);
+}
+
+button:hover[b-ysffkezke9]
+{
+    color: var(--txt-color);
+    background-color: var(--ultra-dark-color);
+}
+
+.form-container[b-ysffkezke9] {
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    padding: 3rem;
+}
 /* _content/Blazoteca/Pages/Shop.razor.rz.scp.css */
 .form-select[b-qp06d3d39a] {
     display: initial;
@@ -87,6 +133,10 @@ button:hover[b-76icu2de6q]
 
 @keyframes slow-highlighting-b-76icu2de6q {
     to { background-color: var(--ultra-dark-color);}
+}
+/* _content/Blazoteca/Shared/CardRecensione.razor.rz.scp.css */
+p[b-91mijsqxjf] {
+    color: var(--dark-color);
 }
 /* _content/Blazoteca/Shared/CustomMainLayout.razor.rz.scp.css */
 main[b-z8srr0w22p] {

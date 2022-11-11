@@ -1,0 +1,25 @@
+<section id="in-evidenza" class="p-4">
+    <h2 class="display-6 fw-bolder">In evidenza</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+                @for(int i = 0; i < MaxItems; i++) {
+                    <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
+                        <Card></Card>
+                    </div>
+                }
+        </div>
+    </div>
+</section>
+
+
+@code {
+    [Parameter]
+    public int MaxItems { get; set; }
+    protected override void OnInitialized()
+    {
+        if (MaxItems > 4 || MaxItems == 0) 
+            MaxItems = 4;
+    }
+}
+

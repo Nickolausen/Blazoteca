@@ -13,77 +13,77 @@ namespace Blazoteca.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 1 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 2 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 3 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 4 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 5 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 6 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 7 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 8 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 9 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 10 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\_Imports.razor"
+#line 11 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Data;
 
 #line default
@@ -98,23 +98,20 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "C:\Users\lucac\Documents\Sorgenti\Blazoteca\Pages\Shop.razor"
+#line 37 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Shop.razor"
       
 
     [Parameter]
     public int MaxItems { get; set; }
 
-    public int ItemsToDisplay { get; set; }
-
-    protected override void OnInitialized()
-    {
-        ItemsToDisplay = MaxItems == 0 ? 20 : MaxItems;
-    }
+        protected override void OnInitialized()
+        {
+            MaxItems = MaxItems == 0 ? 18 : MaxItems;
+        }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Enoteca enoteca { get; set; }
     }
 }
 #pragma warning restore 1591

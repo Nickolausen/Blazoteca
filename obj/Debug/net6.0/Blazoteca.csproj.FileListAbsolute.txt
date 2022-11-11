@@ -333,3 +333,16 @@ C:\Users\lucac\Documents\Sorgenti\Blazoteca\obj\Debug\net6.0\Blazoteca.pdb
 C:\Users\lucac\Documents\Sorgenti\Blazoteca\obj\Debug\net6.0\Blazoteca.genruntimeconfig.cache
 C:\Users\lucac\Documents\Sorgenti\Blazoteca\obj\Debug\net6.0\ref\Blazoteca.dll
 C:\Users\lucac\Documents\Sorgenti\Blazoteca\obj\Debug\net6.0\Blazoteca.csproj.CopyComplete
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Pages\Recensioni.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Pages\Recensioni.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Recensioni.razor.rz.scp.css
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Shared\CardRecensione.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Shared\CardRecensione.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Shared\CardRecensione.razor.rz.scp.css
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Shared\InEvidenza.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Shared\InEvidenza.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Pages\Carrello.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Pages\Carrello.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Shared\CardCarrello.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Shared\CardCarrello.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Carrello.razor.rz.scp.css

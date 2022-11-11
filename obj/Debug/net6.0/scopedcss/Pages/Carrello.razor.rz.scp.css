@@ -1,0 +1,11 @@
+button[b-jyc1m5lllj]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-jyc1m5lllj]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}

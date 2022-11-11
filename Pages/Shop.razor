@@ -1,5 +1,4 @@
 @page "/shop"
-@inject Enoteca enoteca;
 
 <PageTitle>Blazoteca 5F</PageTitle>
 
@@ -26,15 +25,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            @enoteca.DataSetBottiglie.Count
-                @for(int i = 0; i < enoteca.DataSetBottiglie.Count; i++) {
-                    @* <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
+                @for(int i = 0; i < MaxItems; i++) {
+                    <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
                         <Card></Card>
-                    </div> *@
-
-                    <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center text-danger fw-bolder">
-                        @i<br>
-                        @enoteca.DataSetBottiglie[i].Nome
                     </div>
                 }
         </div>
@@ -46,11 +39,11 @@
     [Parameter]
     public int MaxItems { get; set; }
 
-    public int ItemsToDisplay { get; set; }
-
-    protected override void OnInitialized()
-    {
-        ItemsToDisplay = MaxItems == 0 ? 20 : MaxItems;
-    }
+        protected override void OnInitialized()
+        {
+            MaxItems = MaxItems == 0 ? 18 : MaxItems;
+        }
 }
+
+
 

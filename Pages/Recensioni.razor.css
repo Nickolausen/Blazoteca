@@ -1,0 +1,33 @@
+/* .title-wrapper {
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+
+    --hero-height: 75vh;
+    /* height: var(--hero-height); */
+    /* margin-bottom: calc(100vh - var(--hero-height)); */
+
+.title-wrapper :not(img) {
+    z-index: 10;
+    color: var(--txt-color);
+}
+
+.title-wrapper > img {
+    filter: brightness(40%);
+}
+
+button
+{
+    color: var(--txt-color);
+    outline: 0;
+    background-color: var(--dark-color);
+}
+
+button:hover
+{
+    color: var(--txt-color);
+    background-color: var(--ultra-dark-color);
+}
+
+.form-container {
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    padding: 3rem;
+}

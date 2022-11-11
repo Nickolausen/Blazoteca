@@ -1,0 +1,103 @@
+@page "/recensioni"
+@inject Messaggio msg;
+
+<PageTitle>Recensioni</PageTitle>
+<section id="about-us">
+    <div class="title-wrapper d-flex justify-content-center align-items-center flex-column">
+        <img src="img/wine-banner.jpg" class="w-100 text-white" alt="">
+
+        <div class="wrapper position-absolute text-center">
+            <h2 class="display-1 fw-bolder">Recensioni</h2>
+            <h4 class="fs-4">Parlano di noi...</h4>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="Spedizione veloce, ampia possibilità di scelta e assistenza sempre disponibile."
+                    AccountSource="Michele Mambelli"
+                    ServiceSource="Facebook"/>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="I migliori del settore."
+                    AccountSource="Pasquale Santini"
+                    ServiceSource="Recensioni Google"/>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="Esperienza positiva. La scelta dei vini é abbastanza varia per essere un enoteca online e con una qualità medio-alta."
+                    AccountSource="Francesco Buda"
+                    ServiceSource="Trustpilot"/>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="Ho ordinato più volte del vino e qualche volta anche amari, arrivati ghiacciati e pronti al consumo."
+                    AccountSource="Marco Crogioli"
+                    ServiceSource="Recensioni Google"/>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="Ottimo servizio personalizzato in base alle preferenze ed esigenze del cliente!"
+                    AccountSource="Pietro Gallo"
+                    ServiceSource="Twitter"/>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center pb-5">
+                <CardRecensione 
+                    CorpoRecensione="Consigliatissimo!"
+                    AccountSource="Domenico Bini"
+                    ServiceSource="Recensioni Google"/>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="form-wrapper w-100 w-sm-50 d-flex align-items-center justify-content-center flex-column p-4">
+        <h3 class="fw-bolder">Facci sapere la tua!</h3>
+        <h5 class="fs-6">Complila il form sottostante</h5>
+        <div class="form-container h-100 mt-4 rounded">
+            <EditForm Model=@msg>
+                <DataAnnotationValidator/>
+                <div class="form-group mt-3">
+                    <label for="InputNome">Nome</label>
+                    <input type="text" class="form-control" id="InputNome" placeholder="Inserisci il tuo nome">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="InputEmail">Indirizzo email</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digita qui email">
+                    <small id="emailHelp" class="form-text text-muted">Non condividiamo la tua mail con terze parti.</small>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="InputOggetto">Oggetto</label>
+                    <input type="text" class="form-control" id="InputOggetto" placeholder="Inserisci oggetto della recensione">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="InputCorpo">Corpo</label>
+                    <input type="text" class="form-control" id="InputCorpo" placeholder="Inserisci il corpo della recensione">
+                </div>
+                
+                <div class="btn-wrapper text-center">
+                    <button type="submit" class="btn mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                        <span>Scrivi</span>
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</section>
+
+
+@code {
+
+}
