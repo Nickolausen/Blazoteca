@@ -31,7 +31,7 @@ async function getBottiglieByDescPrice() {
     try {
         let pool = await sql.connect(config);
         let elenco = 
-            await pool.request().query("SELECT * FROM Bottiglia ORDER BY Prezzo DESC");
+            await pool.request().query("SELECT * FROM Bottiglia ORDER BY Bottiglia.Prezzo DESC");
         
         return elenco.recordsets;
     } catch (error) {
@@ -43,7 +43,7 @@ async function getBottiglieByAscPrice() {
     try {
         let pool = await sql.connect(config);
         let elenco = 
-            await pool.request().query("SELECT * FROM Bottiglia ORDER BY Prezzo ASC");
+            await pool.request().query("SELECT * FROM Bottiglia ORDER BY Bottiglia.Prezzo ASC");
         
         return elenco.recordsets;
     } catch (error) {
@@ -54,9 +54,9 @@ async function getBottiglieByAscPrice() {
 async function getBottiglieByNewest() {
     try {
         let pool = await sql.connect(config);
-        let elenco = await pool.request().query("SELECT * FROM Bottiglia");
+        let elenco = await pool.request().query("SELECT * FROM Bottiglia ORDER BY ID DESC");
 
-        return elenco.recordsets.reverse();
+        return elenco.recordsets;
     }
     catch (error) {
         console.log(error);

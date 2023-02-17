@@ -27,19 +27,19 @@ router.route('/bottiglie/:id').get((request, response) => {
     })
   })
   
-router.route("/bottiglie/desc").get((request, response) => {
+router.route("/desc").get((request, response) => {
   Db.getBottiglieByDescPrice().then((data) => {
       response.json(data[0])
   })
 })
 
-router.route("/bottiglie/asc").get((request, response) => {
+router.route("/asc").get((request, response) => {
   Db.getBottiglieByAscPrice().then((data) => {
       response.json(data[0])
   })
 })
 
-router.route("/bottiglie/new").get((request, response) => {
+router.route("/new").get((request, response) => {
   Db.getBottiglieByNewest().then((data) => {
       response.json(data[0])
   })
