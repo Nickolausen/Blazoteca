@@ -1,4 +1,5 @@
 @page "/shop"
+@inject HttpClient http;
 
 <PageTitle>Blazoteca 5F</PageTitle>
 
@@ -8,16 +9,18 @@
             <div class="col">
                 <h2 class="fs-1 fw-bolder">Shop</h2>
             </div>
-            <div class="col d-flex justify-content-end">
+            <div class="col d-flex flex-row justify-content-end align-items-center">
                 <form>
                     <label for="sortby" class="pe-2">Filtra per:</label>
-                    <select id="sortby" class="form-select form-select-sm" aria-label="Sortby selection">
-                        <option selected></option>
-                        <option value="/">I più popolari</option>
-                        <option value="/">Nuovi arrivi</option>
-                        <option value="/">Prezzo (crescente)</option>
-                        <option value="/">Prezzo (decrescente)</option>
+                    <select id="sortby" class="form-select form-select-sm" aria-label="Sortby selection" @bind=@SelectedFilter>
+                        <option selected value="bottiglie">-- Seleziona filtro --</option>
+                        <option value="new">Nuovi arrivi</option>
+                        <option value="asc">Prezzo (crescente)</option>
+                        <option value="desc">Prezzo (decrescente)</option>
                     </select>
+                    <button class="btn ms-2" @onclick=@FilterBy>
+                        <span>Filtra</span>
+                    </button>  
                 </form>
             </div>
         </div>
@@ -25,12 +28,21 @@
 
     <div class="container-fluid">
         <div class="row">
-                @for(int i = 0; i < MaxItems; i++) {
-                    <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
-                        <a href="/dettaglio">
-                            <Card></Card>
-                        </a>
-                    </div>
+                @if (ElencoBottiglie is not null)
+                {
+                    @for(int i = 0; i < ElencoBottiglie.Length; i++) {
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
+                            <a href="/dettaglio/@ElencoBottiglie[i].ID" class="h-100">
+                                <Card
+                                    NomeVino=@ElencoBottiglie[i].Nome 
+                                    AnnoProduzione=@ElencoBottiglie[i].AnnoProduzione
+                                    ProvinciaProduzione=@ElencoBottiglie[i].ProvinciaProduzione
+                                    Prezzo=@ElencoBottiglie[i].Prezzo
+                                    PercSconto=@ElencoBottiglie[i].PercentualeSconto
+                                    ImgPath=@ElencoBottiglie[i].PercorsoImmagine></Card>
+                            </a>
+                        </div>
+                    }
                 }
         </div>
     </div>
@@ -40,12 +52,19 @@
 
     [Parameter]
     public int MaxItems { get; set; }
+    public Bottiglia[] ElencoBottiglie;
 
-        protected override void OnInitialized()
-        {
-            MaxItems = MaxItems == 0 ? 18 : MaxItems;
-        }
+    public string SelectedFilter { get; set; } = "bottiglie";
+    protected override async Task OnInitializedAsync()
+    {
+        if (MaxItems > 4 || MaxItems == 0) 
+            MaxItems = 4;
+
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/bottiglie");
+    }
+
+    public async Task FilterBy() 
+    {
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/" + SelectedFilter);
+    }
 }
-
-
-

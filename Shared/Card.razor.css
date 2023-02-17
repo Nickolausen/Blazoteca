@@ -2,13 +2,17 @@
     --info-height: 250px;
 }
 
-.card {
+.wrapper 
+{
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+}
+
+.top-card {
     --card-width: 300px;
     --card-height: 450px;
 
     width: var(--card-width);
-    height: calc(var(--info-height) + var(--card-height)) !important;
-    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    
     border: 0;
 }
 
@@ -27,12 +31,13 @@
 }
 
 .info-container {
+    height: 200px !important;
+    width: 300px !important;
     background-color: var(--secondary-color);
-    height: var(--info-height);
 }
 
 .info-container:hover {
-    animation: 0.85s slow-highlighting forwards;
+    animation: 0.3s slow-highlighting forwards;
     cursor: pointer;
 }
 
@@ -93,5 +98,5 @@ img {
 }
 
 @keyframes slow-highlighting {
-    to { background-color: var(--ultra-dark-color);}
+    to { background-color: var(--ultra-dark-color); }
 }

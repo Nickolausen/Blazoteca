@@ -115,17 +115,17 @@ using Blazoteca.Data;
     [Parameter]
     public string ProvinciaProduzione { get; set; }
     
-    private double _price;
+    public double FullPrice;
 
     [Parameter]
     public double Prezzo { 
         get 
         {
-            return (double)this._price - (this._price * PercSconto / 100);
+            return (double)this.FullPrice - (this.FullPrice * PercSconto / 100);
         } 
         set 
         {
-            this._price = value;
+            this.FullPrice = value;
         } 
     }
 

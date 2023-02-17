@@ -31,6 +31,15 @@ button:focus[b-an7i3lrfic] {
     box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
 }
 
+.badge[b-an7i3lrfic] {
+    top: 2.5%;
+    left: 5%; 
+    position: absolute;
+
+    background-color: var(--dark-color);
+    z-index: 10; 
+}
+
 @keyframes slow-highlighting-b-an7i3lrfic {
     to { background-color: var(--ultra-dark-color);}
 }
@@ -78,18 +87,38 @@ button:focus[b-ysffkezke9] {
     display: initial;
     width: initial;
 }
+
+button[b-qp06d3d39a]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-qp06d3d39a]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus[b-qp06d3d39a] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
 /* _content/Blazoteca/Shared/Card.razor.rz.scp.css */
 :root[b-76icu2de6q] {
     --info-height: 250px;
 }
 
-.card[b-76icu2de6q] {
+.wrapper[b-76icu2de6q] 
+{
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+}
+
+.top-card[b-76icu2de6q] {
     --card-width: 300px;
     --card-height: 450px;
 
     width: var(--card-width);
-    height: calc(var(--info-height) + var(--card-height)) !important;
-    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    
     border: 0;
 }
 
@@ -108,12 +137,13 @@ button:focus[b-ysffkezke9] {
 }
 
 .info-container[b-76icu2de6q] {
+    height: 200px !important;
+    width: 300px !important;
     background-color: var(--secondary-color);
-    height: var(--info-height);
 }
 
 .info-container:hover[b-76icu2de6q] {
-    animation: 0.85s slow-highlighting-b-76icu2de6q forwards;
+    animation: 0.3s slow-highlighting-b-76icu2de6q forwards;
     cursor: pointer;
 }
 
@@ -174,7 +204,7 @@ img[b-76icu2de6q] {
 }
 
 @keyframes slow-highlighting-b-76icu2de6q {
-    to { background-color: var(--ultra-dark-color);}
+    to { background-color: var(--ultra-dark-color); }
 }
 /* _content/Blazoteca/Shared/CardRecensione.razor.rz.scp.css */
 p[b-91mijsqxjf] {

@@ -96,7 +96,7 @@ using Blazoteca.Data;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/dettaglio")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/dettaglio/{ID:int}")]
     public partial class Dettaglio : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -104,6 +104,36 @@ using Blazoteca.Data;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 47 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Dettaglio.razor"
+       
+    [Parameter]
+    public int ID { get; set; }
+    private Bottiglia bot;
+    protected override async Task OnInitializedAsync()
+    {
+        Bottiglia[] tmp = await http.GetFromJsonAsync<Bottiglia[]>("/api/bottiglie/" + ID);
+        bot = tmp[0];
+
+        Prezzo = bot.Prezzo;
+    }
+
+    public double FullPrice { get; set; }
+    public double Prezzo { 
+        get
+        {
+            return FullPrice - (double)(FullPrice * bot.PercentualeSconto / 100);
+        } 
+        set
+        {
+            FullPrice = value;
+        } 
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
     }
 }
 #pragma warning restore 1591

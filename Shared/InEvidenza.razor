@@ -7,9 +7,9 @@
         <div class="row">
             @if (ElencoBottiglie is not null)
             {
-                @for(int i = 0; i < MaxItems; i++) {
+                @for(int i = 1; i < MaxItems + 1; i++) {
                     <div class="col-12 col-md-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
-                        <a href="/dettaglio">
+                        <a href="/dettaglio/@ElencoBottiglie[i].ID" class="h-100">
                             <Card
                                 NomeVino=@ElencoBottiglie[i].Nome 
                                 AnnoProduzione=@ElencoBottiglie[i].AnnoProduzione

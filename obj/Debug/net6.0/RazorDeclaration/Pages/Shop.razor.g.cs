@@ -105,20 +105,31 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Shop.razor"
+#line 51 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Shop.razor"
       
 
     [Parameter]
     public int MaxItems { get; set; }
+    public Bottiglia[] ElencoBottiglie;
 
-        protected override void OnInitialized()
-        {
-            MaxItems = MaxItems == 0 ? 18 : MaxItems;
-        }
+    public string SelectedFilter { get; set; } = "bottiglie";
+    protected override async Task OnInitializedAsync()
+    {
+        if (MaxItems > 4 || MaxItems == 0) 
+            MaxItems = 4;
+
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/bottiglie");
+    }
+
+    public async Task FilterBy() 
+    {
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/" + SelectedFilter);
+    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
     }
 }
 #pragma warning restore 1591
