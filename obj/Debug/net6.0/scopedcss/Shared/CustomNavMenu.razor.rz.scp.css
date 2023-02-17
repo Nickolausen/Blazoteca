@@ -13,6 +13,9 @@ nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
     background-color: var(--secondary-color) !important;
 }
 
+button:focus[b-9chp4s6w9u] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
 
 .navbar-toggler-icon[b-9chp4s6w9u] {
     filter: invert();

@@ -10,6 +10,30 @@ button:hover[b-jyc1m5lllj]
     color: var(--txt-color);
     background-color: var(--secondary-color);
 }
+
+button:focus[b-jyc1m5lllj] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+/* _content/Blazoteca/Pages/Dettaglio.razor.rz.scp.css */
+button[b-an7i3lrfic]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-an7i3lrfic]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus[b-an7i3lrfic] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+@keyframes slow-highlighting-b-an7i3lrfic {
+    to { background-color: var(--ultra-dark-color);}
+}
 /* _content/Blazoteca/Pages/Index.razor.rz.scp.css */
 /* _content/Blazoteca/Pages/Recensioni.razor.rz.scp.css */
 /* .title-wrapper {
@@ -39,6 +63,10 @@ button:hover[b-ysffkezke9]
 {
     color: var(--txt-color);
     background-color: var(--ultra-dark-color);
+}
+
+button:focus[b-ysffkezke9] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
 }
 
 .form-container[b-ysffkezke9] {
@@ -131,6 +159,10 @@ button:hover[b-76icu2de6q]
     background-color: var(--secondary-color);
 }
 
+button:focus[b-76icu2de6q] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
 @keyframes slow-highlighting-b-76icu2de6q {
     to { background-color: var(--ultra-dark-color);}
 }
@@ -158,6 +190,9 @@ nav[b-9chp4s6w9u], .dropdown-menu[b-9chp4s6w9u]
     background-color: var(--secondary-color) !important;
 }
 
+button:focus[b-9chp4s6w9u] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
 
 .navbar-toggler-icon[b-9chp4s6w9u] {
     filter: invert();

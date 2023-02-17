@@ -9,3 +9,7 @@ button:hover
     color: var(--txt-color);
     background-color: var(--secondary-color);
 }
+
+button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}

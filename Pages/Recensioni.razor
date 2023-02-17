@@ -1,5 +1,6 @@
 @page "/recensioni"
 @inject Messaggio msg;
+@inject HttpClient http
 
 <PageTitle>Recensioni</PageTitle>
 <section id="about-us">
@@ -99,5 +100,7 @@
 
 
 @code {
+    private Recensione[]? ElencoRecensioni;
+    
 
 }

@@ -78,6 +78,10 @@ button:hover[b-76icu2de6q]
     background-color: var(--secondary-color);
 }
 
+button:focus[b-76icu2de6q] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
 @keyframes slow-highlighting-b-76icu2de6q {
     to { background-color: var(--ultra-dark-color);}
 }

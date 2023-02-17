@@ -429,3 +429,6 @@ C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Blazoteca.pdb
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Blazoteca.genruntimeconfig.cache
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\ref\Blazoteca.dll
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Blazoteca.csproj.CopyComplete
+C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Pages\Dettaglio.razor.g.cs
+C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Pages\Dettaglio.razor.g.cs
+C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Dettaglio.razor.rz.scp.css

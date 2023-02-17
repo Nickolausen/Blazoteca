@@ -98,7 +98,7 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Pages\Shop.razor"
+#line 39 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Pages\Shop.razor"
       
 
     [Parameter]

@@ -97,7 +97,7 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 61 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Shared\CustomNavMenu.razor"
+#line 52 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Shared\CustomNavMenu.razor"
  
     public static int ItemsCount { get; set; }
 

@@ -1,0 +1,39 @@
+@page "/dettaglio"
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <img class="w-100" src="./img/wine-bottle.png">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h1 class="fw-bold">Nome Vino - 2022</h1>
+            <h2 class="text-secondary fs-5 fw-lighter text-uppercase">Forlì-Cesena (FC) - Emilia-Romagna</h2>
+            <hr>
+            <div class="mb-3 d-flex flex-row align-items-center">
+                <i class="fs-4 bi bi-thermometer-half"></i>
+                <span class="ms-2 fs-5 fw-bold">9.0°</span>
+            </div>
+            <p class="text-secondary">Creato da James Borrough nel 1800, questo Gin è l'unico in tutta la categoria ad essere interamente distillato e prodotto nel centro di Londra. Il suo nome prende spunto dalle guardie che controllavano la Torre della città e proprio l'immagine di una di loro è stata scelta per l'etichetta, mai cambiata nel corso dei secoli.</p>
+            <div class="mb-3 d-flex flex-row align-items-center">
+                <i class="fs-2 bi bi-currency-euro"></i>
+                @if(!true)
+                {
+                    <span class="fs-3 fw-bold">17.90</span>
+                }
+                else 
+                {
+                    <span class="small old-price text-decoration-line-through fs-4 text-secondary">1009.99</span>
+                    <span class="ms-2 fw-bolder fs-3">1009.99</span>
+                }
+            </div>
+            <div class="d-flex justify-content-center justify-content-md-start pt-3">
+                <button class="btn text-center">
+                    <i class="bi bi-cart3"></i>
+                    <span>Aggiungi al carrello</span>
+                </button> 
+            </div>
+        </div>
+    </div>
+</div>
+<h1></h1>

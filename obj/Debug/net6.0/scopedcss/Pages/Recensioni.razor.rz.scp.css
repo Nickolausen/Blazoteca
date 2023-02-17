@@ -27,6 +27,10 @@ button:hover[b-ysffkezke9]
     background-color: var(--ultra-dark-color);
 }
 
+button:focus[b-ysffkezke9] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
 .form-container[b-ysffkezke9] {
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
     padding: 3rem;

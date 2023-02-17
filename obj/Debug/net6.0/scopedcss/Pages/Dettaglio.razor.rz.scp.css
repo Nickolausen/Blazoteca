@@ -1,15 +1,19 @@
-button[b-jyc1m5lllj]
+button[b-an7i3lrfic]
 {
     color: var(--txt-color);
     background-color: var(--dark-color);
 }
 
-button:hover[b-jyc1m5lllj]
+button:hover[b-an7i3lrfic]
 {
     color: var(--txt-color);
     background-color: var(--secondary-color);
 }
 
-button:focus[b-jyc1m5lllj] {
+button:focus[b-an7i3lrfic] {
     box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+@keyframes slow-highlighting-b-an7i3lrfic {
+    to { background-color: var(--ultra-dark-color);}
 }

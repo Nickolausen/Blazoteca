@@ -97,7 +97,7 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Shared\InEvidenza.razor"
+#line 18 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Shared\InEvidenza.razor"
        
     [Parameter]
     public int MaxItems { get; set; }

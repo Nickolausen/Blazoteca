@@ -97,6 +97,17 @@ using Blazoteca.Data;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 102 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Pages\Recensioni.razor"
+       
+    private Recensione[]? ElencoRecensioni;
+    
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Messaggio msg { get; set; }
     }
 }
