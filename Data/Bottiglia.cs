@@ -1,47 +1,16 @@
-﻿using System.Xml.Serialization;
-namespace Blazoteca.Data
+﻿namespace Blazoteca.Data
 {
     public class Bottiglia
     {
-        [XmlIgnore]
-        public Guid Id { get; set; }
-
-        [XmlIgnore]
-        public Vino Vino { get; set; }
-
-        [XmlIgnore]
-        public Cantina Cantina { get; set; }
-
-        [XmlElement(ElementName = "nome")]
+        public int ID { get; set; }
         public string Nome { get; set; }
-
-        [XmlElement(ElementName = "anno")]
-        public string Anno { get; set; }
-
-        [XmlElement(ElementName = "descrizione")]
+        public int AnnoProduzione { get; set; }
+        public string ProvinciaProduzione { get; set; }
+        public string RegioneProduzione { get; set; }
+        public double Prezzo { get; set; }
+        public int PercentualeSconto { get; set; }
+        public double Gradazione { get; set; }
         public string Descrizione { get; set; }
-
-        [XmlElement(ElementName = "immagine")]
-        public string Immagine { get; set; }
-
-        [XmlElement(ElementName = "prezzo")]
-        public decimal Prezzo { get; set; }
-
-        [XmlElement(ElementName = "gradazione")]
-        public double PercentualeAlcolica { get; set; }
-
-        public Bottiglia() { }
-        public Bottiglia(Guid id, Vino vino, Cantina cantina, string nome, string anno, string descrizione, string immagine , decimal prezzo, double percentualeAlcolica)
-        {
-            Id = id;
-            Vino = vino;
-            Cantina = cantina; 
-            Nome = nome;
-            Anno = anno;
-            Descrizione = descrizione;
-            Immagine = immagine;
-            Prezzo = prezzo;
-            PercentualeAlcolica = percentualeAlcolica;
-        }
+        public string PercorsoImmagine { get; set; }
     }
 }

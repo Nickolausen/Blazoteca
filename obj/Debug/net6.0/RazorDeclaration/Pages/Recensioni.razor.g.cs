@@ -13,96 +13,105 @@ namespace Blazoteca.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 1 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 2 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
+using System.Globalization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 4 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 5 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 6 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 7 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 8 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 9 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 10 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 11 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\_Imports.razor"
+#line 12 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Data;
 
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Components.RouteAttribute("/recensioni")]
-    public partial class Recensioni : global::Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/recensioni")]
+    public partial class Recensioni : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
 #nullable restore
-#line 102 "C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\Pages\Recensioni.razor"
+#line 72 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Recensioni.razor"
        
     private Recensione[]? ElencoRecensioni;
     
-
+    protected override async Task OnInitializedAsync() {
+        ElencoRecensioni = await http.GetFromJsonAsync<Recensione[]>("api/recensioni");
+    }
 
 #line default
 #line hidden

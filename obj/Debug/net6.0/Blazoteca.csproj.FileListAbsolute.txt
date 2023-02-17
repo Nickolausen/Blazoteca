@@ -432,3 +432,6 @@ C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Blazoteca.csp
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Pages\Dettaglio.razor.g.cs
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Pages\Dettaglio.razor.g.cs
 C:\Users\nicholas.magi\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Dettaglio.razor.rz.scp.css
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\RazorDeclaration\Pages\Dettaglio.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\Razor\Pages\Dettaglio.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net6.0\scopedcss\Pages\Dettaglio.razor.rz.scp.css

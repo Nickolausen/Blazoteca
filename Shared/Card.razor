@@ -1,17 +1,27 @@
 <div class="card align-items-center rounded-top h-100 w-sm-100">
-    <span class="badge badge-secondary">Offerta</span>
+    @if (PercSconto != 0) 
+    {
+        <span class="badge badge-secondary">Offerta</span>
+    }
     <img 
-        src="img/wine-bottle.png" 
-        alt="Sono qui!" 
-        class="w-75">
-    <div class="info-container w-100 rounded-top d-flex flex-column h-100 pt-4 px-3">
-        <p class="title text-break">Lambrusco Sangiovese Trebbiano Trebbiano <span class="year">2022</span></p>
+        src=@ImgPath 
+        alt="Sono qui!"
+        class="mt-1">
+    <div class="info-container w-100 rounded-top d-flex flex-column pt-4 px-3">
+        <p class="title text-break">@NomeVino <span class="year">@AnnoProduzione</span></p>
         <p class="text-white made-in">prodotto in provincia di</p>
-        <p class="region">Forlì - Cesena</p>
+        <p class="region">@ProvinciaProduzione</p>
         <div class="wrapper d-flex mt-1 mb-2 align-items-center">
             <p class="price flex-grow-1">
-                <span class="small old-price text-decoration-line-through">1009.99€</span>
-                <span class="fw-bolder">1009.99€</span>
+                @if (PercSconto != 0) 
+                {
+                    <span class="small old-price text-decoration-line-through">@(_price.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+                    <span class="fw-bolder">@((Prezzo + (Prezzo * (double)(PercSconto / 100))).ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+                }
+                else 
+                {
+                    <span class="fw-bolder">@(Prezzo.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+                }
             </p>
             <button class="btn text-center" @onclick=@AddToCart>
                 <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -22,6 +32,34 @@
 </div>
 
 @code {
+    [Parameter]
+    public string NomeVino { get; set; }
+
+    [Parameter]
+    public int AnnoProduzione { get; set; }
+
+    [Parameter]
+    public string ProvinciaProduzione { get; set; }
+    
+    private double _price;
+
+    [Parameter]
+    public double Prezzo { 
+        get 
+        {
+            return (double)this._price - (this._price * PercSconto / 100);
+        } 
+        set 
+        {
+            this._price = value;
+        } 
+    }
+
+    [Parameter]
+    public int PercSconto { get; set; }
+
+    [Parameter]
+    public string ImgPath { get; set; }
     public void AddToCart() {
         Blazoteca.Shared.CustomNavMenu.ItemsCount += 1;
     }

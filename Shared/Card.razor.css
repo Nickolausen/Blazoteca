@@ -1,11 +1,14 @@
+:root {
+    --info-height: 250px;
+}
+
 .card {
-    --card-width: 275px;
-    --card-height: 360px;
+    --card-width: 300px;
+    --card-height: 450px;
 
     width: var(--card-width);
-    height: var(--card-height);
+    height: calc(var(--info-height) + var(--card-height)) !important;
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
-    margin: 2%;
     border: 0;
 }
 
@@ -25,6 +28,7 @@
 
 .info-container {
     background-color: var(--secondary-color);
+    height: var(--info-height);
 }
 
 .info-container:hover {
@@ -80,6 +84,12 @@ button:hover
 
 button:focus {
     box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+img {
+    width:  var(--card-width);
+    height: var(--card-height);
+    object-fit: scale-down;
 }
 
 @keyframes slow-highlighting {

@@ -8,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<Messaggio>();
+builder.Services.AddScoped( sp => new HttpClient 
+{
+    BaseAddress = new Uri("http://localhost:8090")
+});
 
 var app = builder.Build();
 
