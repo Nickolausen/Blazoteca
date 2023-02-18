@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--IdVino,
+	NomeVino, 
+	AnnoProduzione,
+	ProvinciaProduzione,
+	RegioneProduzione,
+	Prezzo,
+	PercentualeSconto,
+	Immagine
+	Descrizione,
+	Gradazione
+	-->
+<bottiglie>
+	<bottiglia>
+		<IdVino>0</IdVino>
+		<NomeVino>Romandiola Romagna Albana Dolce Aura Dolce</NomeVino>
+		<AnnoProduzione>2019</AnnoProduzione>
+		<ProvinciaProduzione>Ravenna (RA)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>8,54</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>9,00</Gradazione>
+		<Descrizione>
+			L'Albana di Romagna DOCG è un'uva antichissima conosciuta e descritta da oltre 100 anni; 
+			è il primo vino bianco italiano ad ottenere la DOCG. Le uve vengono raccolte manualmente la prima decade di settembre e la fermentazione avviene in acciaio in assenza delle bucce. 
+			Affinamento per 8 mesi sulle fecce fini.
+		</Descrizione>
+		<Immagine>https://static.xtrawine.com/Global/Images/XW/products/wines/26129_RomandiolaRomagnaAlbanaDolceAuraDolce_2019_1.jpg</Immagine>
+	</bottiglia>
+	
+	<bottiglia>
+		<IdVino>1</IdVino>
+		<NomeVino>Bosco Eliceo DOP Fortana Frizzante</NomeVino>
+		<AnnoProduzione>2020</AnnoProduzione>
+		<ProvinciaProduzione>Ferrara (FE)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>6,90</Prezzo>
+		<PercentualeSconto>5</PercentualeSconto>
+		<Gradazione>9,00</Gradazione>
+		<Descrizione>
+			Colore rosso rubino vivace con riflessi porpora, naso caratterizzato da frutti rossi e neri freschi, ciliegia e amarena, su un fondo scuro con note terrose/vegetali. Al sorso è rustico e asciutto, lascia il palato magnificamente pulito.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/Matterellifortanafrizz_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>2</IdVino>
+		<NomeVino>Colli Bolognesi DOP Merlot "Guidesco"</NomeVino>
+		<AnnoProduzione>2018</AnnoProduzione>
+		<ProvinciaProduzione>Bologna (BO)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>25,50</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>14,5</Gradazione>
+		<Descrizione>
+			Rubino fitto e luminoso, denso. Naso incisivo e modulato su sentori di prugna in confettura, un varietale vegetale, tabacco, spezie dolci, pepe, legno, polvere di caffé e balsamicità. 
+			Sorso solido e ben avvolgente, arriva ad esprimere tutta la sua grande personalità in un equilibrio perfetto. Ritorno di frutta e spezie a regalare infinita lunghezza.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/Folesanoguidesco_600x.png</Immagine>
+	</bottiglia>
+	
+	<bottiglia>
+		<IdVino>3</IdVino>
+		<NomeVino>Colli d'Imola DOP Cabernet Sauvignon Riserva "Grifaia"</NomeVino>
+		<AnnoProduzione>2019</AnnoProduzione>
+		<ProvinciaProduzione>Bologna (BO)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>13,20</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>14</Gradazione>
+		<Descrizione>
+			Colore rosso rubino intenso con riflessi granati.
+			Al naso sensazioni balsamiche speziate intrecciate ad eleganti nuances di cioccolato, tabacco vaniglia e cacao.
+			In bocca ben bilanciato con un'acidità ed un tannino eleganti. Finale lungo e persistente.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/merlotta_grifaia_7473bd02-ae29-4eb6-b697-90cb6152bf9d_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>4</IdVino>
+		<NomeVino>Romagna DOP Sangiovese Superiore</NomeVino>
+		<AnnoProduzione>2021</AnnoProduzione>
+		<ProvinciaProduzione>Forlì-Cesena (FC)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>6,60</Prezzo>
+		<PercentualeSconto>10</PercentualeSconto>
+		<Gradazione>13,5</Gradazione>
+		<Descrizione>
+			Colore rosso rubino, al naso sentori fruttati (ciliegia, prugna) e floreali (violetta).
+			in bocca asciutto e fresco. Caratteristico.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/balducci_sang_sup_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>5</IdVino>
+		<NomeVino>Modena DOP Pignoletto Spumante Brut "Moden Blanc"</NomeVino>
+		<AnnoProduzione>2021</AnnoProduzione>
+		<ProvinciaProduzione>Modena (MO)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>9,00</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>12</Gradazione>
+		<Descrizione>
+			Aspetto luminoso nella sua veste paglierina, dotato di mousse vivace.
+			Elegante naso che sa di agrumi, fragranti tigli, pesca bianca e crosta di pane. Rimane a lungo al palato un sorso denso, sapido e morbido a conferma dei sentori olfattivi dal ricordo agrumato.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/Modenblancpignolettofrizzante_b61f9a4f-32da-4079-9c29-58884b7876d2_600x.png</Immagine>
+	</bottiglia>     
+
+	<bottiglia>
+		<IdVino>6</IdVino>
+		<NomeVino>Colli di Faenza DOP Rosso Riserva "Montecorallo"</NomeVino>
+		<AnnoProduzione>2009</AnnoProduzione>
+		<ProvinciaProduzione>Ravenna (RA)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>13,50</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>14</Gradazione>
+		<Descrizione>
+			Colore rosso granato con riflessi aranciati. Al naso sentori di frutta rossa in confettura e/o sotto spirito (ciliegia e prugna).
+			Tocchi di buccia di pomodoro disidratato e di erbaceo nobile con lieve reminescenze di alloro e salvia. Finale Balsamico. Vino di struttura, calore e compattezza, tannino levigato e maturo. 
+			Chiusura su ritorni di frutta in confettura e vaniglia.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/merlotta_grifaia_7473bd02-ae29-4eb6-b697-90cb6152bf9d_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>7</IdVino>
+		<NomeVino>Romagna Albana DOCG Secco</NomeVino>
+		<AnnoProduzione>2021</AnnoProduzione>
+		<ProvinciaProduzione>Forlì-Cesena (FC)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>7,10</Prezzo>
+		<PercentualeSconto>50</PercentualeSconto>
+		<Gradazione>14</Gradazione>
+		<Descrizione>
+			Paglierino con riflessi dorati. Naso complesso, sentori di albicocca, pesca gialla, ananas e ginestra con delicato finale citrino. All’assaggio, l’alcol è ben bilanciato dall’importante
+			vena fresca e sapida, quasi astringente. Di lunga beva.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/zavalloni_albana_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>8</IdVino>
+		<NomeVino>Colli di Imola DOP Cabernet Sauvignon</NomeVino>
+		<AnnoProduzione>2016</AnnoProduzione>
+		<ProvinciaProduzione>Bologna (BO)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>9,70</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>14</Gradazione>
+		<Descrizione>
+			Colore rosso rubino compatto. Al naso profumi di more di gelso e mirtillo, in una cornice di peperone verde grigliato. 
+			Il gusto si sviluppa sul corpo pieno, con tannini piacevolmente integrati e freschezza avvolgente, offendo alla chiusura note balsamiche e di pepe nero.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/siepi_cabernetsauv_600x.png</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>9</IdVino>
+		<NomeVino>Colli di Parma DOP Sauvignon Fermo "Virgo"</NomeVino>
+		<AnnoProduzione>2016</AnnoProduzione>
+		<ProvinciaProduzione>Parma (PR)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>10,60</Prezzo>
+		<PercentualeSconto>0</PercentualeSconto>
+		<Gradazione>13</Gradazione>
+		<Descrizione>
+			Colore giallo paglierino con riflessi verdognoli. Al naso sentori caratteristici di bosso, foglie di pomodoro e agrumi (cedro maturo). Si percepiscono inoltre sentori di salvia e pietra focaia.
+			In bocca avvolgente e sapido.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/sauvignon_600x.jpg</Immagine>
+	</bottiglia>
+
+	<bottiglia>
+		<IdVino>10</IdVino>
+		<NomeVino>Colli Piacentini DOP Malvasia "Theta"</NomeVino>
+		<AnnoProduzione>2020</AnnoProduzione>
+		<ProvinciaProduzione>Piacenza (PC)</ProvinciaProduzione>
+		<RegioneProduzione>Emilia-Romagna</RegioneProduzione>
+		<Prezzo>7,90</Prezzo>
+		<PercentualeSconto>7</PercentualeSconto>
+		<Gradazione>9</Gradazione>
+		<Descrizione>
+			Colore giallo paglierino luminoso. 
+			Apre con eleganza su toni aromatici, a cui seguono sentori di rosa, frutta gialla matura ed erbe pratensi. Buona rotondità in entrata ed eccellente freschezza.
+		</Descrizione>
+		<Immagine>https://cdn.shopify.com/s/files/1/0410/8887/6700/products/Theta_600x.png</Immagine>
+	</bottiglia>
+</bottiglie>
