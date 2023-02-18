@@ -124,65 +124,6 @@
         }
       },
       {
-        "HashCode": 149221948,
-        "Kind": "Components.Component",
-        "Name": "Blazoteca.Pages.Dettaglio",
-        "AssemblyName": "Blazoteca",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Dettaglio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ID",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "ID",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazoteca.Pages.Dettaglio",
-          "Common.TypeNamespace": "Blazoteca.Pages",
-          "Common.TypeNameIdentifier": "Dettaglio"
-        }
-      },
-      {
-        "HashCode": -1122763068,
-        "Kind": "Components.Component",
-        "Name": "Blazoteca.Pages.Dettaglio",
-        "AssemblyName": "Blazoteca",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazoteca.Pages.Dettaglio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ID",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "ID",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazoteca.Pages.Dettaglio",
-          "Common.TypeNamespace": "Blazoteca.Pages",
-          "Common.TypeNameIdentifier": "Dettaglio",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1306385560,
         "Kind": "Components.Component",
         "Name": "Blazoteca.Pages.Shop",
@@ -238,6 +179,65 @@
           "Common.TypeName": "Blazoteca.Pages.Shop",
           "Common.TypeNamespace": "Blazoteca.Pages",
           "Common.TypeNameIdentifier": "Shop",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 149221948,
+        "Kind": "Components.Component",
+        "Name": "Blazoteca.Pages.Dettaglio",
+        "AssemblyName": "Blazoteca",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Dettaglio"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ID",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ID",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazoteca.Pages.Dettaglio",
+          "Common.TypeNamespace": "Blazoteca.Pages",
+          "Common.TypeNameIdentifier": "Dettaglio"
+        }
+      },
+      {
+        "HashCode": -1122763068,
+        "Kind": "Components.Component",
+        "Name": "Blazoteca.Pages.Dettaglio",
+        "AssemblyName": "Blazoteca",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazoteca.Pages.Dettaglio"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ID",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ID",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazoteca.Pages.Dettaglio",
+          "Common.TypeNamespace": "Blazoteca.Pages",
+          "Common.TypeNameIdentifier": "Dettaglio",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

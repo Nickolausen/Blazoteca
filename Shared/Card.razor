@@ -1,29 +1,27 @@
 <div class="wrapper">
     
-    <div class="top-card align-items-center rounded-top w-sm-100 position-relative">
+    <div class="top-card align-items-center w-sm-100 position-relative">
         @if (PercSconto != 0) 
         {
             <span class="badge badge-secondary">Offerta</span>
         }
         <img src=@ImgPath alt="Sono qui!" class="my-2">
     </div>
-    <div class="info-container w-100 h-100 rounded-top  pt-4 px-3">
+    <div class="info-container w-100 h-100 rounded-top p-3">
         <p class="title text-truncate">@NomeVino <span class="year">@AnnoProduzione</span></p>
         <p class="text-white made-in">prodotto in provincia di</p>
         <p class="region">@ProvinciaProduzione</p>
-        <div class="d-flex mt-1 align-items-center fs-5">
-            <p class="price flex-grow-1">
-                @if (PercSconto != 0) 
-                {
-                    <span class="small old-price text-decoration-line-through">@(FullPrice.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
-                    <span class="fw-bolder">@(Prezzo.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
-                }
-                else 
-                {
-                    <span class="fw-bolder">@(Prezzo.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
-                }
-            </p>
-        </div>
+        <p class="price flex-grow-1 d-flex mt-1 align-items-center fs-5 gap-2">
+            @if (PercSconto != 0) 
+            {
+                <span class="small old-price text-decoration-line-through">@(FullPrice.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+                <span class="fw-bolder">@(Prezzo.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+            }
+            else 
+            {
+                <span class="fw-bolder">@(Prezzo.ToString("C", CultureInfo.CreateSpecificCulture("it-IT")))</span>
+            }
+        </p>
         <button class="btn w-50 float-end" @onclick=@AddToCart>
             <span><i class="bi bi-cart-plus"></i> Aggiungi</span>
         </button>  

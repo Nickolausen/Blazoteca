@@ -31,6 +31,12 @@ button:focus[b-an7i3lrfic] {
     box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
 }
 
+img[b-an7i3lrfic] {
+    max-width: 416px !important;
+    height: 416px;
+    object-fit: scale-down !important;
+}
+
 .badge[b-an7i3lrfic] {
     top: 2.5%;
     left: 5%; 
@@ -111,6 +117,7 @@ button:focus[b-qp06d3d39a] {
 .wrapper[b-76icu2de6q] 
 {
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    border-radius: .75em !important;
 }
 
 .top-card[b-76icu2de6q] {
@@ -140,6 +147,9 @@ button:focus[b-qp06d3d39a] {
     height: 200px !important;
     width: 300px !important;
     background-color: var(--secondary-color);
+
+    border-bottom-left-radius: .75em;
+    border-bottom-right-radius: .75em;
 }
 
 .info-container:hover[b-76icu2de6q] {

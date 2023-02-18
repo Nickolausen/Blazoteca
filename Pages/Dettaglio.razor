@@ -5,7 +5,7 @@
 {
     <div class="container mt-5 pt-4">
         <div class="row">
-            <div class="col-12 col-md-4 position-relative">
+            <div class="col-12 col-md-4 position-relative d-flex justify-content-center">
                 @if (bot.PercentualeSconto != 0)
                 {
                     <span class="badge badge-secondary text-uppercase">Offerta</span>
@@ -13,7 +13,7 @@
                 <img class="w-100" src=@bot.PercorsoImmagine>
             </div>
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8 mt-3 mt-md-0">
                 <h1 class="fw-bold">@bot.Nome - @bot.AnnoProduzione</h1>
                 <h2 class="text-secondary fs-5 fw-lighter text-uppercase">@bot.ProvinciaProduzione - @bot.RegioneProduzione</h2>
                 <hr>

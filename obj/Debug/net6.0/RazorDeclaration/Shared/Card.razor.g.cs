@@ -104,7 +104,7 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "C:\Users\nicho\Documents\GitHub\Blazoteca\Shared\Card.razor"
+#line 32 "C:\Users\nicho\Documents\GitHub\Blazoteca\Shared\Card.razor"
        
     [Parameter]
     public string NomeVino { get; set; }
