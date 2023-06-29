@@ -1,0 +1,34 @@
+button[b-an7i3lrfic]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-an7i3lrfic]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus[b-an7i3lrfic] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+img[b-an7i3lrfic] {
+    max-width: 416px !important;
+    height: 416px;
+    object-fit: scale-down !important;
+}
+
+.badge[b-an7i3lrfic] {
+    top: 2.5%;
+    left: 5%; 
+    position: absolute;
+
+    background-color: var(--dark-color);
+    z-index: 10; 
+}
+
+@keyframes slow-highlighting-b-an7i3lrfic {
+    to { background-color: var(--ultra-dark-color);}
+}

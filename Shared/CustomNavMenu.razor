@@ -1,0 +1,96 @@
+@inject Sessione sessione;
+@inject Utente utente;
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-sticky-top">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="" Match="NavLinkMatch.All">Blazoteca</a>
+        <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-flex">
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="ms-2 ms-lg-0" aria-current="page">Home</span>
+                    </NavLink>
+                </li>
+                
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="recensioni">
+                        <span class="ms-2 ms-lg-0">Recensioni</span>
+                    </NavLink>
+                </li>
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="shop">
+                        <span class="ms-2 ms-lg-0">Shop</span>
+                    </NavLink>
+                </li>
+            </ul>
+
+            <a href="carrello">
+                <form class="d-flex mb-2 mb-lg-0">
+                    <button class="btn">
+                        <i class="oi oi-cart"></i>
+                        Carrello
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">@ItemsCount</span>
+                    </button>
+                </form>
+            </a>
+            @if (sessione.UtenteLoggato) {
+                <a href="login">
+                    <button class="btn mx-3">
+                        <i class="bi bi-file-person-fill"></i>
+                        @utente.Account
+                    </button>
+                </a>
+            }
+            else {
+                <a href="login">
+                    <button class="btn mx-3">
+                        <i class="bi bi-login"></i>
+                        Login
+                    </button>
+                </a>
+            }
+            @if (sessione.UtenteLoggato) {
+                <button class="btn" @onclick="AnnullaLogin">
+                    <i class="bi bi-exit"></i>
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">Esci</span>
+                </button>
+            }
+        </div>
+    </div>
+</nav>
+
+@code
+{
+    [Parameter]
+    public int ItemsCount { get; set; }
+
+    protected override void OnInitialized() {
+        ItemsCount = sessione.Articoli.Count;        
+    }
+
+    protected override void OnAfterRender(bool firstRender) {
+        ItemsCount = sessione.Articoli.Count;
+        StateHasChanged();
+
+    }
+
+    protected void AnnullaLogin() {
+        sessione.UtenteLoggato = false;
+        StateHasChanged();
+
+    }
+
+}

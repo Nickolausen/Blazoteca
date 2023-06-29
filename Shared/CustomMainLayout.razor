@@ -1,0 +1,26 @@
+@inherits LayoutComponentBase
+@inject Sessione sessione;
+
+<CustomNavMenu ItemsCount=@ItemsCount/>
+
+<main>
+    @Body
+</main>
+
+<Footer/>
+
+
+@code
+{
+    public int ItemsCount { get; set; }
+
+    @* protected override void OnInitialized() {
+        ItemsCount = sessione.Articoli.Count;
+        
+    } *@
+    
+    protected override void OnAfterRender(bool firstRender) {
+        ItemsCount = sessione.Articoli.Count;
+    }
+
+}

@@ -1,0 +1,23 @@
+<div class="card w-100 w-sm-75 h-100">
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>@CorpoRecensione</p>
+            <footer class="blockquote-footer pt-2">@AccountSource su <span class="fst-italic">@ServiceSource</span></footer>
+        </blockquote>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public string AccountSource { get; set; }
+
+    [Parameter]
+    public string ServiceSource { get; set; }
+
+    [Parameter]
+    public string CorpoRecensione { get; set; }
+    
+
+}

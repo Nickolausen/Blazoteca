@@ -1,0 +1,89 @@
+@page "/shop"
+@* @inject HttpClient http; *@
+@inject DBBottiglie DB;
+
+<PageTitle>Blazoteca 5F</PageTitle>
+
+<section id="shop" class="p-4">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center py-5">
+            <div class="col">
+                <h2 class="fs-1 fw-bolder">Shop</h2>
+            </div>
+            <div class="col d-flex flex-row justify-content-end align-items-center">
+                <form id="form">
+                    <label for="sortby" class="pe-2">Filtra per:</label>
+                    <select id="sortby" class="form-select form-select-sm" aria-label="Sortby selection" @bind="AggiornaFiltro">
+                        <option selected value="bottiglie">-- Seleziona filtro --</option>
+                        <option value="asc">Prezzo (crescente)</option>
+                        <option value="desc">Prezzo (decrescente)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+                @if (ElencoBottiglie is not null)
+                {
+                    @for(int i = 0; i < ElencoBottiglie.Length; i++) {
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
+                            <a href="/dettaglio/@ElencoBottiglie[i].ID" class="h-100">
+                                <Card
+                                    NomeVino=@ElencoBottiglie[i].Nome 
+                                    AnnoProduzione=@ElencoBottiglie[i].AnnoProduzione
+                                    ProvinciaProduzione=@ElencoBottiglie[i].ProvinciaProduzione
+                                    Prezzo=@ElencoBottiglie[i].Prezzo
+                                    PercSconto=@ElencoBottiglie[i].PercentualeSconto
+                                    ImgPath=@ElencoBottiglie[i].PercorsoImmagine></Card>
+                            </a>
+                        </div>
+                    }
+                }
+        </div>
+    </div>
+</section>
+
+@code{
+
+    [Parameter]
+    public int MaxItems { get; set; }
+    public Bottiglia[] ElencoBottiglie;
+    
+
+    public string SelectedFilter { get; set; } = "bottiglie";
+    public string AggiornaFiltro { 
+        get { return SelectedFilter; }
+        set { SelectedFilter = value; this.FilterBy(); }
+    }
+
+    @* protected override async Task OnInitializedAsync()
+    {
+        if (MaxItems > 4 || MaxItems == 0) 
+            MaxItems = 4;
+
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/bottiglie");
+    } *@
+
+    protected override async Task OnInitializedAsync() {
+        ElencoBottiglie = await DB.GetElencoBottiglie();
+        MaxItems = ElencoBottiglie.Length;
+        this.FilterBy();
+    }
+
+    public void FilterBy() 
+    {
+        //ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/" + SelectedFilter);
+        switch (SelectedFilter) {
+            case "asc":
+                ElencoBottiglie = ElencoBottiglie.OrderBy(b => b.Prezzo).ToArray();
+            break;
+            case "desc":
+            ElencoBottiglie = ElencoBottiglie.OrderByDescending(b => b.Prezzo).ToArray();
+            break;
+            default:
+            break;
+        }
+    }
+}

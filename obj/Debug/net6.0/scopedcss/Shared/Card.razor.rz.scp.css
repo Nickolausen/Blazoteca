@@ -1,0 +1,106 @@
+:root[b-76icu2de6q] {
+    --info-height: 250px;
+}
+
+.wrapper[b-76icu2de6q] 
+{
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    border-radius: .75em !important;
+}
+
+.top-card[b-76icu2de6q] {
+    --card-width: 300px;
+    --card-height: 450px;
+
+    width: var(--card-width);
+    
+    border: 0;
+}
+
+.card:hover[b-76icu2de6q] 
+{ 
+    cursor: pointer;
+}
+
+.badge[b-76icu2de6q] {
+    top: 2.5%;
+    right: 5%; 
+    position: absolute;
+
+    background-color: var(--dark-color);
+    z-index: 10; 
+}
+
+.info-container[b-76icu2de6q] {
+    height: 200px !important;
+    width: 300px !important;
+    background-color: var(--secondary-color);
+
+    border-bottom-left-radius: .75em;
+    border-bottom-right-radius: .75em;
+}
+
+.info-container:hover[b-76icu2de6q] {
+    animation: 0.3s slow-highlighting-b-76icu2de6q forwards;
+    cursor: pointer;
+}
+
+.title[b-76icu2de6q] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    overflow-wrap: normal;
+    color: rgb(185, 190, 201);
+}
+
+.title:hover[b-76icu2de6q] {
+    color: rgb(176, 158, 255);
+}
+
+.made-in[b-76icu2de6q] {
+    margin-bottom: -.5%;
+    font-size: x-small;
+}
+
+.region[b-76icu2de6q] {
+    font-size: 1em;
+    line-height: 1em;
+    overflow-wrap: normal;
+    color: var(--txt-color);
+}
+
+.price[b-76icu2de6q] {
+    font-weight: 700;
+    font-size: 1em;
+    color: rgb(179, 170, 218);
+}
+
+.old-price[b-76icu2de6q] {
+    color: rgb(146, 132, 202);
+}
+
+button[b-76icu2de6q]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-76icu2de6q]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus[b-76icu2de6q] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+img[b-76icu2de6q] {
+    width:  var(--card-width);
+    height: var(--card-height);
+    object-fit: scale-down;
+}
+
+@keyframes slow-highlighting-b-76icu2de6q {
+    to { background-color: var(--ultra-dark-color); }
+}

@@ -1,0 +1,106 @@
+:root {
+    --info-height: 250px;
+}
+
+.wrapper 
+{
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.568);
+    border-radius: .75em !important;
+}
+
+.top-card {
+    --card-width: 300px;
+    --card-height: 450px;
+
+    width: var(--card-width);
+    
+    border: 0;
+}
+
+.card:hover 
+{ 
+    cursor: pointer;
+}
+
+.badge {
+    top: 2.5%;
+    right: 5%; 
+    position: absolute;
+
+    background-color: var(--dark-color);
+    z-index: 10; 
+}
+
+.info-container {
+    height: 200px !important;
+    width: 300px !important;
+    background-color: var(--secondary-color);
+
+    border-bottom-left-radius: .75em;
+    border-bottom-right-radius: .75em;
+}
+
+.info-container:hover {
+    animation: 0.3s slow-highlighting forwards;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    overflow-wrap: normal;
+    color: rgb(185, 190, 201);
+}
+
+.title:hover {
+    color: rgb(176, 158, 255);
+}
+
+.made-in {
+    margin-bottom: -.5%;
+    font-size: x-small;
+}
+
+.region {
+    font-size: 1em;
+    line-height: 1em;
+    overflow-wrap: normal;
+    color: var(--txt-color);
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1em;
+    color: rgb(179, 170, 218);
+}
+
+.old-price {
+    color: rgb(146, 132, 202);
+}
+
+button
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
+
+img {
+    width:  var(--card-width);
+    height: var(--card-height);
+    object-fit: scale-down;
+}
+
+@keyframes slow-highlighting {
+    to { background-color: var(--ultra-dark-color); }
+}

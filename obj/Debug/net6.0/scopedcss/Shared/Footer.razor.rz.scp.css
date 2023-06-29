@@ -1,0 +1,11 @@
+footer[b-a126z7ivyv] {
+    --credits-color: gainsboro;
+
+    flex-shrink: 0;
+    background-color: var(--dark-color);
+}
+
+a[b-a126z7ivyv], p[b-a126z7ivyv], span[b-a126z7ivyv] {
+    text-decoration: none;
+    color: gainsboro;
+}

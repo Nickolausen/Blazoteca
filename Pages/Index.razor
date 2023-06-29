@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject Sessione sessione
+
+<PageTitle>Blazoteca 5F</PageTitle>
+
+<Hero/>
+<InEvidenza/>
+
+
+@code {
+
+    public int ItemsCount { get; set; }
+    protected override void OnAfterRender(bool firstRender) {
+        ItemsCount = sessione.Articoli.Count;
+    }
+
+}

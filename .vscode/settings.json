@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "DB_Bottiglie",
+            "database": "${workspaceFolder:Blazoteca-GUI}/Data/db_bottiglie.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

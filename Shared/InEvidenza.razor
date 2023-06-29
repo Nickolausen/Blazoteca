@@ -1,0 +1,49 @@
+@* @inject HttpClient http; *@
+@inject DBBottiglie DB;
+
+<section id="in-evidenza" class="p-4">
+    <h2 class="display-6 fw-bolder">In evidenza</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            @if (ElencoBottiglie is not null)
+            {
+                @for(int i = 1; i < MaxItems; i++) {
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 pt-5 d-flex justify-content-center align-items-center">
+                        <a href="/dettaglio/@ElencoBottiglie[i].ID" class="h-100">
+                            <Card
+                                NomeVino=@ElencoBottiglie[i].Nome 
+                                AnnoProduzione=@ElencoBottiglie[i].AnnoProduzione
+                                ProvinciaProduzione=@ElencoBottiglie[i].ProvinciaProduzione
+                                Prezzo=@ElencoBottiglie[i].Prezzo
+                                PercSconto=@ElencoBottiglie[i].PercentualeSconto
+                                ImgPath=@ElencoBottiglie[i].PercorsoImmagine></Card>
+                        </a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>
+
+
+@code {
+    [Parameter]
+    public int MaxItems { get; set; }    
+    private Bottiglia[] ElencoBottiglie; 
+    @* protected override async Task OnInitializedAsync()
+    {
+        if (MaxItems > 4 || MaxItems == 0) 
+            MaxItems = 4;
+
+        ElencoBottiglie = await http.GetFromJsonAsync<Bottiglia[]>("api/bottiglie");
+    } *@
+    
+    protected override async Task OnInitializedAsync() {
+        ElencoBottiglie = await DB.GetElencoBottiglie();
+        MaxItems = ElencoBottiglie.Length;
+    }
+
+    
+}
+
