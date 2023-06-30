@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bkrHQZBqOzlWFlZGBjJlCZtCqEvNH5PKiDh3T9pOFgY=",
+  "Hash": "vyMZsJI6xwLYyKwGg5Jtdu+i8PjTHON2j1l/L4KXM1M=",
   "Source": "Blazoteca",
   "BasePath": "_content/Blazoteca",
   "Mode": "Default",
@@ -491,6 +491,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\wine-bottle.png"
+    },
+    {
+      "Identity": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\wwwroot\\media\\empty-cart.png",
+      "SourceId": "Blazoteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\wwwroot\\",
+      "BasePath": "_content/Blazoteca",
+      "RelativePath": "media/empty-cart.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\empty-cart.png"
     },
     {
       "Identity": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\wwwroot\\media\\video-lab-2.mp4",

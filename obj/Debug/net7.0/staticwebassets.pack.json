@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\img\\wine-bottle.png"
     },
     {
+      "Id": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\wwwroot\\media\\empty-cart.png",
+      "PackagePath": "staticwebassets\\media\\empty-cart.png"
+    },
+    {
       "Id": "C:\\Users\\nicho\\Documents\\GitHub\\Blazoteca\\wwwroot\\media\\video-lab-2.mp4",
       "PackagePath": "staticwebassets\\media\\video-lab-2.mp4"
     },

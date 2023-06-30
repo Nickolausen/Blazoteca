@@ -26,6 +26,5 @@ namespace Blazoteca.Data
                 }
         }
         private void Aggiorna() => OnChange?.Invoke();
-              
     }
 }

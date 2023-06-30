@@ -6,7 +6,7 @@
 @inject NavigationManager NavigationManager;
 
 <PageTitle>Login</PageTitle>
-<section id="login">
+<section id="login" class="d-flex h-100 justify-content-center align-items-center">
     <div class="form-wrapper w-100 w-sm-50 d-flex align-items-center justify-content-center flex-column p-4">
         <h3 class="fw-bolder">Login</h3>
         <h5 class="fs-6">Compila il form sottostante</h5>
@@ -48,7 +48,5 @@
             sessione.UtenteLoggato = false; 
 
         NavigationManager.NavigateTo("/");
-        
     }
-
 }

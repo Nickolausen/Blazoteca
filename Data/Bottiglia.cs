@@ -12,7 +12,7 @@
         public double Gradazione { get; set; }
         public string Descrizione { get; set; }
         public string PercorsoImmagine { get; set; }
-
+        public Bottiglia() {}
         public Bottiglia(int id, string n, int a, string pr, string r, double pz, int ps, double gr, string des, string pi) {
             this.ID = id;
             this.Nome = n;

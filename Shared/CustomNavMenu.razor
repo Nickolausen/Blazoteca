@@ -1,5 +1,6 @@
 @inject Sessione sessione;
 @inject Utente utente;
+@inject NavigationManager NavigationManager;
 
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-sticky-top">
@@ -46,8 +47,9 @@
                     </button>
                 </form>
             </a>
+
             @if (sessione.UtenteLoggato) {
-                <a href="login">
+                <a href="add-wine">
                     <button class="btn mx-3">
                         <i class="bi bi-file-person-fill"></i>
                         @utente.Account
@@ -62,10 +64,11 @@
                     </button>
                 </a>
             }
+
             @if (sessione.UtenteLoggato) {
                 <button class="btn" @onclick="AnnullaLogin">
-                    <i class="bi bi-exit"></i>
-                    <span class="badge bg-dark text-white ms-1 rounded-pill">Esci</span>
+                    <i class="oi oi-exit"></i>
+                    Esci
                 </button>
             }
         </div>
@@ -84,13 +87,13 @@
     protected override void OnAfterRender(bool firstRender) {
         ItemsCount = sessione.Articoli.Count;
         StateHasChanged();
-
     }
 
     protected void AnnullaLogin() {
         sessione.UtenteLoggato = false;
         StateHasChanged();
 
+        NavigationManager.NavigateTo("/");
     }
 
 }

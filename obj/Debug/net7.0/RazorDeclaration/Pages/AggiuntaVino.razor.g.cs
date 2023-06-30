@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Blazoteca.Shared
+namespace Blazoteca.Pages
 {
     #line hidden
     using System;
@@ -96,7 +96,8 @@ using Blazoteca.Data;
 #line default
 #line hidden
 #nullable disable
-    public partial class CustomNavMenu : global::Microsoft.AspNetCore.Components.ComponentBase
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/add-wine")]
+    public partial class AggiuntaVino : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,34 +105,18 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 79 "C:\Users\nicho\Documents\GitHub\Blazoteca\Shared\CustomNavMenu.razor"
- 
-    [Parameter]
-    public int ItemsCount { get; set; }
-
-    protected override void OnInitialized() {
-        ItemsCount = sessione.Articoli.Count;        
-    }
-
-    protected override void OnAfterRender(bool firstRender) {
-        ItemsCount = sessione.Articoli.Count;
-        StateHasChanged();
-    }
-
-    protected void AnnullaLogin() {
-        sessione.UtenteLoggato = false;
-        StateHasChanged();
-
-        NavigationManager.NavigateTo("/");
-    }
-
+#line 66 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\AggiuntaVino.razor"
+       
+    private Bottiglia bottiglia = new Bottiglia { AnnoProduzione = DateTime.Now.Year };
+    private IBrowserFile selectedImage;
+    private ElementReference inputFile;
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Utente utente { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Sessione sessione { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private DBBottiglie DB { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -13,84 +13,84 @@ namespace Blazoteca.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 1 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 2 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using System.Globalization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 3 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 4 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 5 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 6 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 7 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 8 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 9 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 10 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 11 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\nicho\Downloads\Blazoteca-GUI\_Imports.razor"
+#line 12 "C:\Users\nicho\Documents\GitHub\Blazoteca\_Imports.razor"
 using Blazoteca.Data;
 
 #line default
@@ -105,7 +105,7 @@ using Blazoteca.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "C:\Users\nicho\Downloads\Blazoteca-GUI\Pages\Shop.razor"
+#line 48 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Shop.razor"
       
 
     [Parameter]
@@ -125,7 +125,7 @@ using Blazoteca.Data;
 #line hidden
 #nullable disable
 #nullable restore
-#line 67 "C:\Users\nicho\Downloads\Blazoteca-GUI\Pages\Shop.razor"
+#line 67 "C:\Users\nicho\Documents\GitHub\Blazoteca\Pages\Shop.razor"
         
 
     protected override async Task OnInitializedAsync() {
@@ -142,7 +142,7 @@ using Blazoteca.Data;
                 ElencoBottiglie = ElencoBottiglie.OrderBy(b => b.Prezzo).ToArray();
             break;
             case "desc":
-            ElencoBottiglie = ElencoBottiglie.OrderByDescending(b => b.Prezzo).ToArray();
+                ElencoBottiglie = ElencoBottiglie.OrderByDescending(b => b.Prezzo).ToArray();
             break;
             default:
             break;

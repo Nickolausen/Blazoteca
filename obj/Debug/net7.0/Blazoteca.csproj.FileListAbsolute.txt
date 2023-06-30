@@ -306,3 +306,6 @@ C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\refint\Blazoteca.dll
 C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\Blazoteca.pdb
 C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\Blazoteca.genruntimeconfig.cache
 C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\ref\Blazoteca.dll
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\RazorDeclaration\Pages\AggiuntaVino.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\Razor\Pages\AggiuntaVino.razor.g.cs
+C:\Users\nicho\Documents\GitHub\Blazoteca\obj\Debug\net7.0\scopedcss\Pages\AggiuntaVino.razor.rz.scp.css

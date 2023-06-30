@@ -150,5 +150,34 @@ namespace Blazoteca.Data
 
             return Task.FromResult(account);
         }
+
+        public Task<bool> AggiungiBottiglia(Bottiglia bott) {
+            int nuovoID = -1;
+
+            SQLiteCommand cmd = new SQLiteCommand("SELECT MAX(ID) FROM Bottiglia", conn);
+            SQLiteDataReader risultato = cmd.ExecuteReader();
+            if (risultato.Read()) {
+                nuovoID = risultato.GetInt32(0);
+                nuovoID += 1;  
+
+                cmd = new SQLiteCommand("INSERT INTO Bottiglia (ID,Nome,AnnoProduzione,ProvinciaProduzione,RegioneProduzione,Prezzo,PercentualeSconto,Gradazione,Descrizione,PercorsoImmagine) VALUES (@ID,@nome,@annoProduzione,@provinciaProduzione,@regioneProduzione,@prezzo,@percentualeSconto,@gradazione,@descrizione,@percorsoImmagine)", conn);
+                cmd.Parameters.Add(new SQLiteParameter("@ID", nuovoID));
+                cmd.Parameters.Add(new SQLiteParameter("@nome", bott.Nome));
+                cmd.Parameters.Add(new SQLiteParameter("@annoProduzione", bott.AnnoProduzione));
+                cmd.Parameters.Add(new SQLiteParameter("@provinciaProduzione", bott.ProvinciaProduzione));
+                cmd.Parameters.Add(new SQLiteParameter("@regioneProduzione", bott.ProvinciaProduzione));
+                cmd.Parameters.Add(new SQLiteParameter("@prezzo", bott.Prezzo));
+                cmd.Parameters.Add(new SQLiteParameter("@percentualeSconto", bott.PercentualeSconto));
+                cmd.Parameters.Add(new SQLiteParameter("@gradazione", bott.Gradazione));
+                cmd.Parameters.Add(new SQLiteParameter("@descrizione", bott.Descrizione));
+                cmd.Parameters.Add(new SQLiteParameter("@percorsoImmagine", 
+                    "https://static.vecteezy.com/system/resources/previews/016/475/594/non_2x/transparent-white-wine-bottle-with-blank-label-and-gold-foil-capsule-seal-png.png"));
+
+                cmd.ExecuteNonQuery();
+                risultato = cmd.ExecuteReader(); 
+            }
+            
+            return new Task<bool>(() => true); 
+        }
     }
 }

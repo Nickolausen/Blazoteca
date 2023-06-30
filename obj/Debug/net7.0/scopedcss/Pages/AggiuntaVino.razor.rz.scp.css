@@ -1,0 +1,15 @@
+button[b-oxtn4aquei]
+{
+    color: var(--txt-color);
+    background-color: var(--dark-color);
+}
+
+button:hover[b-oxtn4aquei]
+{
+    color: var(--txt-color);
+    background-color: var(--secondary-color);
+}
+
+button:focus[b-oxtn4aquei] {
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 230, 0.89) !important;
+}
